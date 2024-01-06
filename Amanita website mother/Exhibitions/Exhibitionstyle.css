@@ -1,0 +1,178 @@
+/* Set default typography styles */
+.thank-you-message, .content, select, input, button, select option, optgroup {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: #000;
+    line-height: 1.5;
+    margin-left: 40px;
+    
+}
+/* Targeting h1 elements */
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    font-style: bold;
+    color: #000;
+    line-height: 1.5;
+    margin-top: 40px;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-style: bold;
+    color: #000;
+    line-height: 1.5;
+}
+
+body, p, h1, h2 {
+    font-family: "Montserrat", sans-serif;
+    background-color: rgb(251, 249, 249);
+}
+
+body{
+  margin-bottom: 60px;
+}
+
+/* Style links */
+a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: normal;
+    transition: 0.3s ease;
+ 
+}
+
+.seperator {
+    margin:40px;
+}
+
+a:hover {
+    font-weight: bold;
+}
+.form-container {
+    display: flex;
+    align-items: center;
+    gap: 4px; 
+}
+
+select, .newsletter-input {
+ display: inline-block;
+  appearance: none;
+  width: fit-content;
+  padding: 1px;
+  padding-left: 6px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  background-color: white;
+  color: #242424;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' viewBox='0 0 16 9' fill='none'%3E%3Cpath d='M1.1116 0.505645L7.9999 8.04231L14.9678 0.579177' stroke='black'/%3E%3C/svg%3E");
+  background-size: 12px; /* Adjust size as needed */
+  background-position: right 8px center;
+  background-repeat: no-repeat;
+  padding-right: 20px;
+}
+
+
+.placeholder-img {
+    position:fixed;
+    top: 20px;
+    right: 30px;
+    width: 42px;
+}
+.hidden {
+    display: none;
+}
+
+ /* Styles for slideshow container */
+ .slideshow-container {
+    position: relative;
+    max-width: 80%; /* Set the maximum width of the slideshow */
+    margin: 0 auto; /* Center the slideshow horizontally */
+  }
+
+  .slides {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Space between slides */
+  }
+
+  .slides img {
+   height: 600px; /* Ensure images fill the slide container */
+    width: 0 auto; /* Maintain aspect ratio */
+    margin-bottom: 15px;
+  }
+
+  /* Styles for navigation arrows */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    background-color: transparent;
+    z-index: 1; /* Ensure arrows appear on top of the slideshow */
+  }
+
+  .prev {
+    left: 20px;
+  }
+
+  .next {
+    right: 20px;
+  }
+
+
+  .caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+  }
+  body {
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Example font */
+  }
+  
+
+  
+  
+  #slideshow-image {
+    width: 600px; /* Ensure image fills the container */
+    max-height: 760px; /* Maintain aspect ratio */
+  }
+  
+  .text-container {
+    position: relative;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+    max-width: 80%; 
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+  ul {
+    column-count: 2; 
+    list-style-type: none; /* Remove bullet points */
+    font-family:  "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 2;
+    max-width: 500px;
+    margin-left: -40px;
+  }
+  

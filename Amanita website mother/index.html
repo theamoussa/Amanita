@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles.css">
+
+
+</head>
+<body>
+ 
+    <img class="placeholder-img" src="https://storage.googleapis.com/amanita/03_LOGOTYPE_BLACK%20copy.png" alt="Placeholder Image">
+
+    <div class="content">
+
+    <p style="margin-bottom: 200px;"> Amanita <br>
+        313 Bowery<br>
+        10003 NY<br>
+        <a href="mailto:info@spazioamanita.com">info@spazioamanita.com</a>
+    </p>
+    <div class="keepinline"> <p>
+    <a class="keepinline-label" href="Artists.html">Artists:</a>
+        <form id="artistsForm" class="form-container">
+        <select id="myDropdown">
+            <optgroup class="custom-typography" label="Select an artist">
+                <option value="" disabled selected hidden>Select an artist</option>
+                <option value="Artists/EvaBeresin">Eva Beresin</option>
+                <option value="Artists/FrancescoCima">Francesco Cima</option>
+                <option value="Artists/LeonardoMeoni">Leonardo Meoni</option>
+                <option value="Artists/AndrewPiedilato">Andrew Piedilato</option>
+                <option value="Artists/MarcoScarpi">Marco Scarpi</option>
+                <option value="Artists/AdrianSchachter">Adrian Schachter</option>
+                <option value="Artists/AriannaTosi">Arianna Tosi</option>
+                <option value="Artists/BenWerther">Ben Werther</option>
+                <input  class="inputbutton" type="submit" value="Submit">
+        </select>
+        </form>
+    </div></p>
+    <div class="keepinline"> 
+        <p>
+        <a class="keepinline-label" href="exhibitions.html">Exhibitions:</a>
+        </p>
+        <form id="exhibitionForm" class="form-container">
+            <select id="exhibitionDropdown">
+              <optgroup class="custom-typography" label="Select an exhibition">
+                <option value="" disabled selected hidden>Select an exhibition</option>
+                <optgroup label="Current exhibitions">
+                  <option value="Exhibitions/WakingLife">New York: Waking Life</option>
+                  <option value="Exhibitions/TheBeginning">New York: The Beginning</option>
+                </optgroup>
+                <optgroup label="Past Exhibitions">
+                  <optgroup label="2023">
+                    <option value="Exhibitions/musicaparaunmurcielago">New York: Música para un murciélago</option>
+                    <option value="ChiSeminaVento">Florence: Chi Semina Vento</option>
+                    <option value="Abrushwithfantasy">New York: A Brush With Fantasy</option>
+                    <option value="CharacterStudy">New York: Character Study</option>
+                    <option value="Blueprint">New York: Blueprint</option>
+                    <option value="Palai2023">Lecce: Palai 2023</option>
+                    <option value="IrisNava">Fondazione Iris: Robert Nava</option>
+                    <option value="Tutto">Florence: Tutto</option>
+                    <option value="WorksonPaper">New York: Works on Paper: 100 Years</option>
+                    <option value="StradeComode">Florence: Strade Comode ed Evidenti</option>
+                    <option value="RecordingArtists">New York: Recording Artists</option>
+                    <option value="LadraTerra">Los Angeles: Ladra Terra</option>
+                    <option value="EveryoneisaGenius">New York: Everyone is a Genius</option>
+                  </optgroup>
+                  <optgroup label="2022">
+                    <option value="NinePaintings">New York: Nine Paintings (2009 - 2022)</option>
+                    <option value="FormandFormlessness">Miami: Form and Formlessness</option>
+                    <option value="Aktenkundig">New York: Aktenkundig (On Record)</option>
+                    <option value="PlaceHolder">New York: Place Holder</option>
+                    <option value="SplitEnds">Florence: Split Ends</option>
+                    <option value="IlTempoSeMagnaTutto">Florence: Il Tempo Se Magna Tutto</option>
+                    <option value="PunkTyrol">S-Chanf: Punk Tyröl</option>
+                    <option value="Idomyownstunts">Los Angeles: I do my own stunts</option>
+                  </optgroup>
+                  <optgroup label="2021">
+                    <option value="CancellareSenzaPermesso">Florence: Cancellare Senza Permesso</option>
+                    <option value="Will-O-Wisp">Milano: Will-O-Wisp</option>
+                    <option value="TheLoneliestSport">New York: The Loneliest Sport</option>
+                    <option value="PostFataResurgo">Florence: Post Fata Resurgo</option>
+                    <option value="SweetScience">Florence: Sweet Science</option>
+                    <option value="Sprezzatura">Florence: Sprezzatura</option>
+                  </optgroup>
+                  <!-- Add more optgroup labels for other years -->
+                </optgroup>
+              </optgroup>
+            </select>
+            <input class="inputbutton" type="submit" value="Submit">
+          </form>
+
+    </div>
+
+<p><a href="Press.html">Press</a></p> 
+<div class="seperator"></div> 
+<p><a href="About.html">About us</a></p>
+
+<div class="keepinline"> 
+     <p class="keepinline-label">Sign up to our newsletter:</p>
+    <form class="newsletter-form">
+        <input id="newsletterform" type="email" class="newsletter-input" placeholder="Enter your email">
+        <button type="submit" class="inputbutton newsletter-submit">Subscribe</button>
+        <p id="thankYouMessage" class="hidden"> Thank you. You will receive a confirmation email shortly. </p>
+    </form>
+</div>
+
+<script src="Script.js"></script>
+</div>
+</body>
+</html>

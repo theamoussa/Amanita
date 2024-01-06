@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Artiststyle.css">
+
+
+</head>
+<body>
+    <div class="content">
+
+        <a href="javascript:history.back()">
+            <img class="placeholder-img" src="https://storage.googleapis.com/amanita/03_LOGOTYPE_BLACK%20copy.png" alt="Placeholder Image">
+          </a>
+
+        <h1 style="margin-bottom: 10px;"> LEONARDO MEONI </h1>
+        <h2 style="margin-bottom: 10px;"  >Biography </h2>
+    </div>
+
+    <div class="text-container"> 
+        <p>Leonardo Meoni (b.1994, Florence) studied at the Accademia di Belle Arti of Florence and Accademia di Belle Arti of Brera and has participated in various collective exhibitions and projects, in Italy and internationally. Working with a strongly material approach, Leonardo Meoni's works are rooted in a three-dimensional corporeality and convey a sense of ephemeral emotionality. In close contact with the precepts of pictorial art, time, representation and gestures, Meoni empathically blurs the boundaries between genres and artistic practices by existing in an intermediate space between painting, sculpture, and drawing, emphasizing in his work the contamination of practices and different concepts towards universal hybridization. Meoni’s works are the result of a performative gesture and are presented as monochromatic velvet canvases with an intimate cut, rich in shades that give organicity to the composition. In a material game of action and subtraction, a temporality marked by the artist's movement is added to the three dimensional aspect of his works. The velvet, by absorbing the light, returns an ambiguous image, like a primordial photograph in which the control of the glare is subject to the surrounding elements and not to the precision of the medium, creating a figure that opposes easy visibility.</p>
+    </div>
+
+    <div class="element"></div>
+    <h2 style="margin-bottom: 10px;"  >Exhibitions </h2>
+
+    <p>Artissima 2023
+    <p>Palai 2023
+    <p>Place Holder
+    <p>Punk Tyröl
+    <p>Cancellare Senza Permesso </p>
+
+    <div class="element"></div>
+    <h2 style="margin-bottom: 10px;"  >Works </h2>
+    <div class="element"></div>
+
+<div class="slideshow-container">
+    <div class="slides">
+      <div class="slide">
+        <div class="slide-img">
+            <img height=600px src="https://storage.googleapis.com/spazioamanita/Website%20Image%20Database/31.%20Artissima%202023/Artissima%20Images/_DSC7238.jpg" alt="MEON.90.2023">
+        </div>
+        <div class="caption"><em>Nepenthes Attenboroughii</em>, Mixed media on velvet, 98 7/16 x 86 5/8 in 250 x 220 cm</div>
+      </div>
+      <div class="slide">
+        <div class="slide-img">
+            <img height=600px src="https://storage.googleapis.com/spazioamanita/Website%20Image%20Database/Palai%202023/MEON-76-2023-image.jpg" alt="MEON.76.2023">
+        </div>
+        <div class="caption"><em>Maelström I</em>, 2023, Mixed media on velvet, 86 5/8 x 70 7/8 in 220 x 180 cm</div>
+      </div>
+      <!-- Add more slides as needed -->
+    </div>
+    <!-- Navigation arrows -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    let slideIndex = 1;
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("slide");
+
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      slides[slideIndex - 1].style.display = "block";
+    }
+
+    showSlides(slideIndex);
+  </script>
+   <div class="seperator"></div>
+   <div class="seperator"></div>
+</body>
+</html>

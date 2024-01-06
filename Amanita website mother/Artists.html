@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Artists</title>
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Artists/Artiststyle.css">
+    </head>
+    <body>   
+     <a href="index.html">
+        <img class="placeholder-img" src="https://storage.googleapis.com/amanita/03_LOGOTYPE_BLACK%20copy.png" alt="Placeholder Image">
+      </a>
+      <div class="container">
+        <div class="image-container">
+          <img id="slideshow-image" src="" alt="Slideshow Image">
+        </div>
+        <div class="element-list">
+          <a href="Artists/EvaBeresin.html" class="element" onmouseover="showImage(0)" onmouseout="hideImage()">Eva Beresin</a>
+          <a href="Artists/FrancescoCima.html" class="element" onmouseover="showImage(1)" onmouseout="hideImage()">Francesco Cima</a>
+          <a href="Artists/LeonardoMeoni.html" class="element" onmouseover="showImage(2)" onmouseout="hideImage()">Leonardo Meoni</a>
+          <a href="Artists/AndrewPiedilato.html" class="element" onmouseover="showImage(3)" onmouseout="hideImage()">Andrew Piedilato</option>
+          <a href="Artists/MarcoScarpi.html" class="element" onmouseover="showImage(4)" onmouseout="hideImage()">Marco Scarpi</option>
+          <a href="Artists/AdrianSchachter.html"class="element" onmouseover="showImage(5)" onmouseout="hideImage()">Adrian Schachter</option>
+          <a href="Artists/AriannaTosi.html"class="element" onmouseover="showImage(6)" onmouseout="hideImage()">Arianna Tosi</option>
+          <a href="Artists/BenWerther.html"class="element" onmouseover="showImage(7)" onmouseout="hideImage()">Ben Werther</option>
+          <!-- Add more elements as needed -->
+        </div>
+      </div>
+    
+      <script>
+        const images = [
+          'https://storage.googleapis.com/spazioamanita/Website%20Image%20Database/14.%20Aktenkundig%20(On%20Record)/Images/Artworks/Low%20res/Amanita-Eva%20Beresin%20(BERE%20.36.2022)_0079.jpg',
+          'https://storage.googleapis.com/spazioamanita/Website%20Image%20Database/29.%20%20Chi%20Semina%20Vento/Images/021-spazio-amanita-francesco-cima-ph-stefano-casati-09208.jpg',
+          'https://storage.googleapis.com/spazioamanita/Website%20Image%20Database/31.%20Artissima%202023/Artissima%20Images/_DSC7241%20copy%202.jpg',
+          'https://storage.googleapis.com/spazioamanita/Website%20Image%20Database/14.%20Aktenkundig%20(On%20Record)/Images/Artworks/Low%20res/Amanita-Eva%20Beresin%20(BERE%20.36.2022)_0079.jpg',
+          'https://storage.googleapis.com/spazioamanita/Website%20Image%20Database/29.%20%20Chi%20Semina%20Vento/Images/021-spazio-amanita-francesco-cima-ph-stefano-casati-09208.jpg',
+          'https://storage.googleapis.com/spazioamanita/Website%20Image%20Database/31.%20Artissima%202023/Artissima%20Images/_DSC7241%20copy%202.jpg',
+          'https://storage.googleapis.com/spazioamanita/Website%20Image%20Database/31.%20Artissima%202023/Artissima%20Images/_DSC7241%20copy%202.jpg',
+          'https://storage.googleapis.com/spazioamanita/Website%20Image%20Database/14.%20Aktenkundig%20(On%20Record)/Images/Artworks/Low%20res/Amanita-Eva%20Beresin%20(BERE%20.36.2022)_0079.jpg',
+      ]
+        function showImage(index) {
+          const imageElement = document.getElementById('slideshow-image');
+          imageElement.src = images[index];
+          document.querySelector('.image-container').style.display = 'block';
+        }
+      
+        function showRandomImage() {
+          // Show a random image when not hovering
+          const randomIndex = Math.floor(Math.random() * images.length);
+          showImage(randomIndex);
+        }
+      
+        // Show a random image on page load
+        showRandomImage();
+      </script>
+    </body>
+</html>

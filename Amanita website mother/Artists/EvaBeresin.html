@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Eva Beresin</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Artiststyle.css">
+
+
+</head>
+<body>
+    <div class="content">
+
+        <a href="javascript:history.back()">
+            <img class="placeholder-img" src="https://storage.googleapis.com/amanita/03_LOGOTYPE_BLACK%20copy.png" alt="Placeholder Image">
+          </a>
+
+        <h1 style="margin-bottom: 10px;"> EVA BERESIN </h1>
+        <h2 style="margin-bottom: 10px;"  >Biography </h2>
+    </div>
+
+    <div class="text-container"> 
+    <p> Eva Beresin (b. 1955, Budapest, Hungary) started drawing and painting in her childhood while spending countless afternoons with her parents at vibrant Café Gerbeaud in Budapest. There she loved to observe the other guests especially the older ladies with their wild makeup and styling. After finishing the School of Visual Arts in Budapest she moved to Vienna. Beresin has been working with different media for the past decades and continuously showed her paintings at various locations. Besides painting she has been working in private and corporate interior design as well as corporate graphic design.
+    <p> In 2015, Eva Beresin exhibited at Charim Galerie an artistic confrontation with her mother’s diary written after her liberation from Auschwitz. "I only began to process it after her death. I got her still intact world from 1943 where Jews in Hungary could live in relative normality converted into my painting and a multi-layered representation of her history."
+    <p>The majority of her works from summer 2019 which were painted with oil colours directly onto old fashion magazines, depicted self-portraits, the perception of her body, which she placed virtually within the time and location of Auschwitz in order to retrace her family’s tracks. Sometimes in the paintings, she is moving naked and vulnerable, in order to be able to start a dialogue with those she was never able to actually meet. She used subjects and postures from fashion magazines because they were surprisingly easy to transfer to the extremity of the time. Her courage to show all of this made her laugh and comforted her. "Because despite all the hardships, we are still here. The last couple of months I am still dealing with myself and my body and I feel I’m getting braver about it and this fact I am enjoying a lot. The story of where I come from and who I am today seems an inexhaustible source." Based on that exhibition the book ”Ninety-Eight Pages” was published by Verlag für moderne Kunst in 2019.
+    <p>"I’m addicted to Instagram it’s like a new coffeehouse culture, see and be seen, communication platform and imaginary resource." Instagram was also pivotal as it was the place where Eva Beresin and Kenny Schachter met in 2019. With whom she developed a close correspondence since the pandemic that has had a stimulating influence on her work. Schachter’s writings as a critic and his curatorial work has also been central to her introduction to a wider public.
+    <p>"My work is the constant attempt to translate the images in my head. The banal, everyday or fleetingly-perceived have the same status as phantasias or images from art history. I am impatient and want to make the pictures in my head visible in my own visual language as quickly as possible, so the pictures are never finished, but rather remain in a continuous process. The overpainting, the use and experimentation with different materials—such as collage, photography and painting—are an expression of what seems important to me at the moment, a narrative form that is only safe from myself when I hand it over in a further process of change. Invisible figures, people either in motion or standing in front of each other commingle. They are mostly female figures—my own engagement with femininity and sexuality, history and the questioning of painting." - Eva Beresin</p>
+    </div>
+
+    <div class="seperator"></div>
+    <h2 style="margin-bottom: 10px;"  >Exhibitions </h2>
+
+    <p>Waking Life
+    <p>Aktenkundig (On Record)
+    <p>Punk Tyröl
+    <p>Will-O-Wisp
+    <p>The Loneliest Sport
+    <p>Post Fata Resurgo</p>
+
+    <div class="seperator"></div>
+    <h2 style="margin-bottom: 10px;"  >Works </h2>
+    <div class="seperator"></div>
+
+<div class="slideshow-container">
+    <div class="slides">
+      <div class="slide">
+        <div class="slide-img">
+            <img height=600px src="https://storage.cloud.google.com/amanita/Eva%20/Amanita-Eva%20Beresin%20(BERE%20.20.2022)_0070.jpg" alt="BERE.20.2022">
+        </div>
+        <div class="caption"><em>A Crushing Wave of Unconciousness</em>, 2022, Acrylic on canvas, 120 1/8 x 191 in, 305 x 485 cm</div>
+      </div>
+      <div class="slide">
+        <div class="slide-img">
+            <img height=600px src="https://storage.cloud.google.com/amanita/Eva%20/Amanita-Eva%20Beresin%20(BERE%20.36.2022)_0079.jpg" alt="BERE.36.2022">
+        </div>
+        <div class="caption"><em>I am only drawing What I am dreaming of</em>, 2022, Acrylic on canvas, 35 3/8 x 27 1/2 in, 90 x 70 cm</div>
+      </div>
+      <!-- Add more slides as needed -->
+    </div>
+    <!-- Navigation arrows -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    let slideIndex = 1;
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("slide");
+
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      slides[slideIndex - 1].style.display = "block";
+    }
+
+    showSlides(slideIndex);
+  </script>
+  <div class="seperator"></div>
+  <div class="seperator"></div>
+</body>
+</html>
